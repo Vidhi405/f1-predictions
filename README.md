@@ -13,6 +13,15 @@ This project is an early-stage experiment that uses historical race results, dri
 5) Predicts whether a driver will finish in the points (P1–P10)
 6) More detailed prediction features (full finishing order, faster models, etc.) are planned as development continues.
 
+# Model Notes
+Currently used:
+1) DecisionTreeClassifier (baseline)
+2) Train/test split
+3) One-hot encoding for teams & driver codes
+4) Rolling-window driver-form features:
+5) Average finishing position
+6) Points-scoring rate
+
 # How to run
 
 Install these libraries: pip install fastf1 pandas numpy scikit-learn
